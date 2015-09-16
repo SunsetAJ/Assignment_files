@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+		<link rel="stylesheet" href="css/nav_style.css">
+		<link rel="stylesheet" href="css/tool_style.css">
+		<title>PST | Tool-Tip</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="uft-8">
+	</head>
+	<body>
+		<section id="wrapper"> <!--Wrapper for website-->
+		
+			<section id="open_menu" onmouseover="Hover_active('open_menu', 'opacity', '0.5');" onmouseout="No_hover('open_menu', 'opacity', '1');">
+				<a onclick="Open_menu('nav_container');">
+					<img src="img/menu-01.png" class="mobile_menu"/>
+				</a>
+			</section>
+		
+			<!--Navigation and Website image-->
+			<section id="head_navigation"> <!--Wrapper for header-->
+				<section id="head_image"> <!--Image for website-->
+					<div class="head_img">
+						<!--img src="img/head_img.jpg" class="image"/> <!--Links in image-->
+					</div>
+				</section>
+				<section id="head_nav"> <!--Navigation wrapper-->
+					<nav id="nav_container">
+						<!--<a href="#" class="buttons" id="home_ui"></a>
+						<a href="#" class="buttons" id="learn_ui"></a>
+						<a href="#" class="buttons" id="learn_ui"></a> <!--Navigation buttons
+						<a href="#" class="buttons" id="quiz_ui"></a>
+						<a href="#" class="buttons" id="quiz_ui"></a>-->
+						<a href="index.html" class="buttons">HOME</a>
+						<a href="course1.html" class="buttons">COURSE</a>
+						<a href="tooltip.html" class="buttons">TOOLTIP</a> <!--Navigation buttons-->
+						<a href="quiz_form.html" class="buttons">QUIZ</a>
+						<a href="#" class="buttons">EXAM</a>
+					</nav>
+				</section>
+			</section>
+			
+			<!--Main area of the webpage-->
+			<section id="main"> <!--Wrapper for the main area of the website-->
+				<section id="help_container"><!--Side help bar for website-->
+					<h1 class="help_title">HELP GUIDE</h1>
+					<section id="course_container"> 
+					
+						<section class="course"><!--Course 1-->
+							<a class="course_title" onclick="Select_course('course1_courses');"><section id="c1_open_arrow">></section>COURSE 1 - EFFECTS</a><!--Course Title-->
+							<section id="course1_courses" style="display: none;">
+								<li>
+									<a href="course1.html" class="topic_titles">
+										BLACK AND WHITE
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">			<!--Topics-->
+										SEPIA
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">
+										VIGNETTE
+									</a>
+								</li>
+							</section>
+						</section>
+						
+						<section class="course"><!--Course 2-->
+							<a class="course_title" onclick="Select_course('course2_courses');"><section id="c2_open_arrow">></section>COURSE 2 - SELECTING</a><!--Course Title-->
+							<section id="course2_courses"style="display: none;">
+								<li>
+									<a href="course1.html" class="topic_titles">
+										MAGIC WAND TOOL
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">			<!--Topics-->
+										LASSO TOOL
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">
+										PEN TOOL
+									</a>
+								</li>
+							</section>
+						</section>
+						
+						<section class="course"><!--Course 3-->
+							<a class="course_title" onclick="Select_course('course3_courses');"><section id="c3_open_arrow">></section>COURSE 3 - FILTERS</a><!--Course Title-->
+							<section id="course3_courses"style="display: none;">
+								<li>
+									<a href="course1.html" class="topic_titles">
+										BLUR FILTER
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">			<!--Topics-->
+										SHARPEN FILTER
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">
+										FILTER GALLERY
+									</a>
+								</li>
+							</section>
+						</section>
+						
+						<section class="course"><!--Course 4-->
+							<a class="course_title" onclick="Select_course('course4_courses');"><section id="c4_open_arrow">></section>COURSE 4 - TIPS & TRICKS</a><!--Course Title-->
+							<section id="course4_courses"style="display: none;">
+								<li>
+									<a href="course1.html" class="topic_titles">
+										RESIZING
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">			<!--Topics-->
+										BOOST COLOUR
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">
+										BORDERS
+									</a>
+								</li>
+							</section>
+						</section>
+						
+					</section>
+				</section>
+				<section id="tool_container">
+					<h2 class="tool_title">Click on the icon to see what they do in Photoshop.</h2>
+					<h3 class="tool_note">*Note: Each of the tools that have an little arrow has some extra tools associated with it, click and hold in Photoshop to see<br>
+						what they are. The ones explained down below are the more common tools*</h3>
+					<section id="tool-tip_area">
+						<section id="tool_images">
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_1', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_1', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Move Tool<br>Shortcut = V<br> Used to move around objects within Photoshop');">
+									<img src="img/tooltip_img/v.jpg" class="img" id="tool_icon_1"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_2', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_2', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Marquee Tool<br>Shortcut = M<br> Used to make selections in Photoshop');">
+									<img src="img/tooltip_img/m.jpg" class="img" id="tool_icon_2"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_3', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_3', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Lasso Tool<br>Shortcut = L<br> Used to make more precise selections in Photoshop');">
+									<img src="img/tooltip_img/l.jpg" class="img" id="tool_icon_3"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_4', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_4', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Quick Selection Tool<br>Shortcut = W<br> Used to make selections in Photoshop, <br>These selections can easily be edited using the tool.');">
+									<img src="img/tooltip_img/w.jpg" class="img" id="tool_icon_4"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_5', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_5', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Crop Tool<br>Shortcut = C<br> Use to crop your image. This crops the whole canvas not just the image.');">
+									<img src="img/tooltip_img/c.jpg" class="img" id="tool_icon_5"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_6', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_6', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Eyedropper Tool<br>Shortcut = I<br> Used to select colours that you want to use.');">
+									<img src="img/tooltip_img/i.jpg" class="img" id="tool_icon_6"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_7', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_7', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Spot Healing Brush Tool<br>Shortcut = J<br> This tool allows you to get rid of small imperfections on your images.');">
+									<img src="img/tooltip_img/j.jpg" class="img" id="tool_icon_7"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_8', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_8', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Brush Tool<br>Shortcut = B<br> Used to paint colours on your canvas.');">
+									<img src="img/tooltip_img/b.jpg" class="img" id="tool_icon_8"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_9', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_9', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Clone Stamp Tool<br>Shortcut = S<br> Used to copy parts of your image to another spot.');">
+									<img src="img/tooltip_img/s.jpg" class="img" id="tool_icon_9"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_10', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_10', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = History Brush Tool<br>Shortcut = Y<br> Undos areas you have erased using the eraser tool.');">
+									<img src="img/tooltip_img/y.jpg" class="img" id="tool_icon_10"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_11', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_11', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Eraser Tool<br>Shortcut = E<br> Allows you to erase areas of the image.');">
+									<img src="img/tooltip_img/e.jpg" class="img" id="tool_icon_11"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_12', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_12', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Fill Tool<br>Shortcut = G<br> Use to add a colour to a large area on your image.');">
+									<img src="img/tooltip_img/g.jpg" class="img" id="tool_icon_12"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_13', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_13', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Blur Tool<br>Shortcut =None<br> Used to add a blur to certain parts of the image.');">
+									<img src="img/tooltip_img/blur.jpg" class="img" id="tool_icon_13"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_14', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_14', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Dodge Tool<br>Shortcut = O<br> Used to add highlights and unexpose areas of your image.');">
+									<img src="img/tooltip_img/o.jpg" class="img" id="tool_icon_14"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_15', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_15', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Pen Tool<br>Shortcut = P<br> Allows you to make a selection around a object easily and more accuratly.');">
+									<img src="img/tooltip_img/p.jpg" class="img" id="tool_icon_15"/>
+								</a>
+							</section>
+							<section class="tool_img" onmouseover="Hover_active('tool_icon_16', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_16', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Text Tool<br>Shortcut = T<br> Used to add some text to your image.');">
+									<img src="img/tooltip_img/t.jpg" class="img" id="tool_icon_16"/>
+								</a>
+							</section>
+							<section class="tool_img_colour" onmouseover="Hover_active('tool_icon_17', 'opacity', '0.5');" onmouseout="No_hover('tool_icon_17', 'opacity', '1');">
+								<a onclick="Show_information('information_container', 'Name = Colour Pallet<br>Shortcut = X<br> Shortcut resets the colour to the default black and white<br>This will be colours will be painted on your canvas using either the<br>brush tool or fill tool.');">
+									<img src="img/tooltip_img/colour.jpg" class="img" id="tool_icon_17"/>
+								</a>
+							</section>
+							
+						</section>
+						<section id="tool_information">
+							<section id="information_container">
+								
+							</section>
+						</section>
+					</section>
+				</section>
+			
+			</section>
+			
+			<section id="footer" onmouseover="Hover_active('footer', 'opacity', '1');" onmouseout="No_hover('footer', 'opacity', '0.2');"> <!--Footer and hover effect-->
+				<section class="copyright">
+					<section id="visable_footer"> <!--What will be seen before JS-->
+						&copy Sunset Studios Canberra	2015
+					</section>
+					<section id="hidden_footer" style="display: none;">	<!--What will be seen after JS-->
+							<section id="helpful_links">
+								HELPFUL LINKS:<br>
+								<li>
+									<a class="footer_text" href="http://phlearn.com/" target="_blank">Phlearn.com</a><br>
+								</li>
+								<li>
+									<a class="footer_text" href="http://www.freeimages.com/" target="_blank">Free Images</a><br>
+								</li>
+								<li>
+									<a class="footer_text" href="https://www.adobe.com" target="_blank">Adobe Website</a><br>
+								</li>
+							</section>
+							<section id="social_network">
+								SOCIAL:<br>
+								<li>
+									<a class="footer_text" href="download/images.zip" download="images.zip">Download Images Here</a><br>	<!--Download Link-->
+								</li>
+								<li>
+									<a class="footer_text" href="https://www.facebook.com/SunsetStudiosCanberra" target="_blank">Facebook</a>
+								<li>
+									<a class="footer_text">Contact</a>
+								</li>
+							</section>
+					</section>
+				</section>
+				<section id="footer_open" onclick="Footer_show('footer');">	<!--Button to open Footer-->
+						<a>V</a>
+				</section>
+				
+			</section>
+			
+		</section>
+		<script src="js/home.js"></script>
+		<script src="js/hover.js"></script>	<!--Import JS-->
+		<script src="js/tool.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
+</html>
