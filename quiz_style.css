@@ -1,0 +1,61 @@
+/*Quiz Style*/
+#quiz_container{
+	width: 60%;
+	margin: auto;
+	background-color: white;
+}
+
+.quiz_titles{
+	font-family: 'impact';
+	font-size: 3rem;
+	margin: 0px;
+	margin-top: 1rem;
+	padding: 0px;
+}
+.quiz_subtitle{
+	font-family: 'impact';
+	font-size: 1.5rem;
+	margin-top: 0rem;
+	padding-bottom: 0.5rem;
+	border-bottom: black double 3px;
+}
+
+#form_style{
+	text-align: left;
+	font-family: 'impact';
+	padding-left: 3rem;
+}
+.question_style{
+	font-size: 1.75rem;
+}
+.answer_style{
+	font-size: 1.25rem;
+	padding-left: 3rem;
+}
+
+#results{
+	text-align: center;
+}
+
+#results h3{
+	font-size: 2rem;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+#results span {
+	color: black;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+input[type='submit'], input[type='button']{
+	background-color: #B4E1F0;
+	border: black solid 1px;
+	color: black;
+	font-family: 'impact';
+	font-size: 1.5rem;
+	padding: 15px 30px;
+	margin: 0px;
+	margin-bottom: 2rem;
+}
