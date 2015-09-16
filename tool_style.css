@@ -1,0 +1,93 @@
+/*Tool tip style*/
+#tool_container{
+	width: 67.5%;
+	float: left;
+	font-family: 'impact';
+	color: black;
+	margin-left: 1rem;
+}
+
+.tool_title{
+	font-size: 2.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.tool_note{
+	font-size: 1.25rem;
+	margin-top: 0rem;
+	font-family: 'Arial';
+}
+
+#tool-tip_area{
+	width: 100%;
+	float: left;
+}
+
+#tool_images{
+	width: 10%;
+	float:left;
+	margin: 0;
+	padding: 0;
+}
+
+#tool_information{
+	width:90%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#information_container{
+	width: 80%;
+	margin: auto;
+}
+
+#information_container p{
+	font-size: 1.5rem;
+	margin-top: 0px;
+}
+
+.tool_img{
+	width: 3.25rem;
+	margin: auto;
+	height: 32px;
+	margin-bottom: 0px;
+}
+.tool_img_colour{
+	width: 3.25rem;
+	margin: auto;
+	height: 72px;
+	margin-bottom: 0px;
+}
+
+.img{
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 1400px){
+	#tool_container{
+		width: 90%;
+		margin: auto;
+		float: none;
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 1150px){
+	#tool_container{
+		width: 90%;
+		margin: auto;
+		float: none;
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	#tool_container{
+		width: 90%;
+		margin: auto;
+		float: none;
+		margin-top: 1rem;
+	}
+}
