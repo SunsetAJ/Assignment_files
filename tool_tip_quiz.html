@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+		<link rel="stylesheet" href="css/nav_style.css">
+		<link rel="stylesheet" href="css/quiz_style.css">
+		<title>PST | Tool-Tip Quiz</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="uft-8">
+	</head>
+	<body style="background-color: #dedede;">
+		<section id="quiz_container">
+			<h1 class="quiz_titles">TOOL-TIP - QUIZ</h1>
+			<p class="quiz_subtitle">Test your knowledge on the tool-tip in Photoshop:</p>
+			
+			<form name="quizForm" onsubmit="return submitAnswersT1();" id="form_style">
+				<h2 class="question_style">1. What is the Keyboard shortcut for the Move Tool?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q1" value="a" id="q1a">a. ( M )</input>
+					<br><input type="radio" name="q1" value="b" id="q1b">b. ( V )</input>
+					<br><input type="radio" name="q1" value="c" id="q1b">c. ( T )</input>
+					<br><input type="radio" name="q1" value="d" id="q1b">d. ( A )</input>
+				</p>
+				
+				<h2 class="question_style">2. What does the Marquee Tool allow you to do?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q2" value="a" id="q2a">a. It allows you to mark points on the photo.</input>
+					<br><input type="radio" name="q2" value="b" id="q2b">b. It will used to make margins on the edges of images.</input>
+					<br><input type="radio" name="q2" value="c" id="q2c">c. There is no such tool as a Marquee Tool.</input>
+					<br><input type="radio" name="q2" value="d" id="q2d">d. Allows you to make a selection in Photoshop.</input>
+				</p>
+				
+				<h2 class="question_style">3. True or False: The Crop tool crops the whole canvas.</h2>
+				<p class="answer_style">
+					<input type="radio" name="q3" value="a" id="q3a">a. True</input>
+					<br><input type="radio" name="q3" value="b" id="q3b">b. False</input>
+				</p>
+				
+				<h2 class="question_style">4. What is the Keyboard shortcut for the blush tool?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q4" value="a" id="q4a">a. ( B )</input>
+					<br><input type="radio" name="q4" value="b" id="q4b">b. ( A )</input>
+					<br><input type="radio" name="q4" value="c" id="q4c">c. There is no blush tool</input>
+					<br><input type="radio" name="q4" value="d" id="q4d">d. ( Q )</input>
+				</p>
+				
+				<h2 class="question_style">5. Which of these are a tool on the tool bar in Photoshop?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q5" value="a" id="q5a">a. All answers mentioned</input>
+					<br><input type="radio" name="q5" value="b" id="q5b">b. Brush Tool</input>
+					<br><input type="radio" name="q5" value="c" id="q5c">c. Clone Stamp Tool</input>
+					<br><input type="radio" name="q5" value="d" id="q5d">d. Lasso Tool</input>
+				</p>
+				
+				<br><br>
+				<input type="submit" value="SUBMIT" onmouseover="Hover_active('submit_button', 'background-color', '#4c98b1');" onmouseout="No_hover('submit_button', 'background-color', '#B4E1F0');" id="submit_button">
+				<a href="quiz_form.html"><input type="button" value="BACK" onmouseover="Hover_active('back_button', 'background-color', '#4c98b1');" onmouseout="No_hover('back_button', 'background-color', '#B4E1F0');" id="back_button">
+				</input></a>
+				<section id="results"></section>
+			</form>
+		</section>
+		
+		<script src="js/home.js"></script>
+		<script src="js/hover.js"></script>
+		<script src="js/quiz.js"></script>
+	</body>
+</html>
