@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+		<link rel="stylesheet" href="css/nav_style.css">
+		<link rel="stylesheet" href="css/course_style.css">
+		<title>PST | Courses</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="uft-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<section id="wrapper"> <!--Wrapper for website-->
+		
+			<section id="open_menu" onmouseover="Hover_active('open_menu', 'opacity', '0.5');" onmouseout="No_hover('open_menu', 'opacity', '1');">
+				<a onclick="Open_menu('nav_container');">
+					<img src="img/menu-01.png" class="mobile_menu"/>
+				</a>
+			</section>
+		
+			<!--Navigation and Website image-->
+			<section id="head_navigation"> <!--Wrapper for header-->
+				<section id="head_image"> <!--Image for website-->
+					<div class="head_img">
+						<!--img src="img/head_img.jpg" class="image"/> <!--Links in image-->
+					</div>
+				</section>
+				<section id="head_nav"> <!--Navigation wrapper-->
+					<nav id="nav_container">
+						<!--<a href="#" class="buttons" id="home_ui"></a>
+						<a href="#" class="buttons" id="learn_ui"></a>
+						<a href="#" class="buttons" id="learn_ui"></a> <!--Navigation buttons
+						<a href="#" class="buttons" id="quiz_ui"></a>
+						<a href="#" class="buttons" id="quiz_ui"></a>-->
+						<a href="index.html" class="buttons">HOME</a>
+						<a href="course1.html" class="buttons">COURSE</a>
+						<a href="tooltip.html" class="buttons">TOOLTIP</a> <!--Navigation buttons-->
+						<a href="quiz_form.html" class="buttons">QUIZ</a>
+						<a href="#" class="buttons">EXAM</a>
+					</nav>
+				</section>
+			</section>
+			
+			<!--Main area of the webpage-->
+			<section id="main"> <!--Wrapper for the main area of the website-->
+				<a class="static_arrow" onmouseover="Hover_active('jump_arrow', 'opacity', '1');" onmouseout="No_hover('jump_arrow', 'opacity', '0.2');">
+					<img src="img/top_arrow-01.png" class="jumptotop" id="jump_arrow" style="opacity: 0.2;"/>
+				</a>
+				<section id="help_container"><!--Side help bar for website-->
+					<h1 class="help_title">HELP GUIDE</h1>
+					<section id="course_container"> 
+					
+						<section class="course"><!--Course 1-->
+							<a class="course_title" onclick="Select_course('course1_courses');"><section id="c1_open_arrow">></section>COURSE 1 - EFFECTS</a><!--Course Title-->
+							<section id="course1_courses" style="display: none;">
+								<li>
+									<a href="course1.html" class="topic_titles">
+										BLACK AND WHITE
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">			<!--Topics-->
+										SEPIA
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">
+										VIGNETTE
+									</a>
+								</li>
+							</section>
+						</section>
+						
+						<section class="course"><!--Course 2-->
+							<a class="course_title" onclick="Select_course('course2_courses');"><section id="c2_open_arrow">></section>COURSE 2 - SELECTING</a><!--Course Title-->
+							<section id="course2_courses"style="display: none;">
+								<li>
+									<a href="course1.html" class="topic_titles">
+										MAGIC WAND TOOL
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">			<!--Topics-->
+										LASSO TOOL
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">
+										PEN TOOL
+									</a>
+								</li>
+							</section>
+						</section>
+						
+						<section class="course"><!--Course 3-->
+							<a class="course_title" onclick="Select_course('course3_courses');"><section id="c3_open_arrow">></section>COURSE 3 - FILTERS</a><!--Course Title-->
+							<section id="course3_courses"style="display: none;">
+								<li>
+									<a href="course1.html" class="topic_titles">
+										BLUR FILTER
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">			<!--Topics-->
+										SHARPEN FILTER
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">
+										FILTER GALLERY
+									</a>
+								</li>
+							</section>
+						</section>
+						
+						<section class="course"><!--Course 4-->
+							<a class="course_title" onclick="Select_course('course4_courses');"><section id="c4_open_arrow">></section>COURSE 4 - TIPS & TRICKS</a><!--Course Title-->
+							<section id="course4_courses"style="display: none;">
+								<li>
+									<a href="course1.html" class="topic_titles">
+										RESIZING
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">			<!--Topics-->
+										BOOST COLOUR
+									</a>
+								</li>
+								<li>
+									<a href="course1.html" class="topic_titles">
+										BORDERS
+									</a>
+								</li>
+							</section>
+						</section>
+						
+					</section>
+				</section>
+				
+				<section id = "teaching_area">	<!--Sets the course location-->
+					<section class="teach_course">	<!--Section for a course-->
+						<section id="open_course_c1" onmouseover="Arrow_hover('open_course_c1');" onmouseout="Arrow_no_hover('open_course_c1');">	<!--Button that will be used to expand course-->
+							<a onclick="Select_Course('lesson_area_C1');">></a>
+						</section>
+						<h1 class="topic_title">COURSE 1 - EFFECTS</h1>	<!--Title for course-->
+					</section>
+					<section id="lesson_area_C1">
+					
+						<section id="Black_and_White">
+							<section id="open_topic_t1" onmouseover="Arrow_hover('open_topic_t1');" onmouseout="Arrow_no_hover('open_topic_t1');">
+								<a onclick="Select_Course('topic_info_t1');">></a>
+							</section>
+							<h2 class="course_topic_title">BLACK AND WHITE</h2>
+						</section>
+						<section id="topic_info_t1" style="display: none;">
+								
+								<section class="info_title">Step 1:</section>
+								<section class="info_text">
+									<p>Open Photoshop on your Computer and Load up the image you wish by going to;
+									<br><i>"File > Open > (Navigate to your image)"</i><br>
+									This will be the image you will turn into a killer Black and White photograph.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/bw/step_one.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">Step 2:</section>
+								<section class="info_text">
+									<p>After the image is open in Photoshop the next step is to save. Saving allows you to easily go back when you make a mistake.
+									<br><i>Ctrl + S </i> or <i> "File > Save As > (Save image where you want)"</i><br>
+									This will allow you to save your files.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/bw/step_two.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">Step 3:</section>
+								<section class="info_text">
+									<p>To add the Black and White layer mask.
+									<br>Go to the bottom of the layer panel which is located the the bottom right of the screen and click on the icon that looks like a circle that is half white and half black.
+									<br>Select the layer mask that says;
+									<br><i>"Black & White..."</i>
+									<br>Or go to;<br>
+									<i>"Layer > New Adjustment Layer > Black & White..."</i>
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/bw/step_three.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">Step 4:</section>
+								<section class="info_text">
+									<p>After you add in a Adjustment Layer a window will pop up<br>
+									Hit the two buttons that can be seen on the photo<br>
+									<i>"Auto"</i><br>
+									This will change the settings of the adjustment layer to fit the image. <br>
+									You can also chance the sliders to manually adjust the settings to change the photo to your own preferences<br>
+									<i>"Clipping Mask"</i><br>
+									(The box with the little arrow) This will make the adjustment layer only affect the layer below it and nothing else.
+									<br>If you like the Adjustment Layer to affect all your layers the leave out this step.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/bw/step_four.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">Step 5:</section>
+								<section class="info_text">
+									<p>After you have edited the photo it is time to export it to a appropriate file type.<br>
+									<i>"Ctrl + S or Ctrl + Shift + S"</i><br>
+									Give the image a appropriate name and in the 'Save as type' select JPEG<br>
+									A pop up window will appear changing the slider will increase or decrease the quality of the image. <br>
+									Note that the higher the number the larger the size of the file will be.<br>
+									Hit "ok", congratulations, you have created a Black and White image.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/bw/step_five.jpg" class="image_properties"/>
+								</section>
+						</section>
+						
+						<section id="Sepia">
+							<section id="open_topic_t2" onmouseover="Arrow_hover('open_topic_t2');" onmouseout="Arrow_no_hover('open_topic_t2');">
+								<a onclick="Select_Course('topic_info_t2');">></a>
+							</section>
+							<h2 class="course_topic_title">SEPIA</h2>
+						</section>
+						<section id="topic_info_t2" style="display: none;">
+								<section class="info_title">
+									Step 1:
+								</section>
+								<section class="info_text">
+									<p>
+										Firstly open the image you would like to make into a sepia image.<br>
+										<i>"Ctrl + O" or "File > Open > (Locate File)"</i><br>
+										You can use your own image or one of the images provided in the download link in the<br>
+										footer below.
+										<br>Remember to always save your work 
+										<br><i>"File > Save"</i>
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/sepia/step_one.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">
+									Step 2:
+								</section>
+								<section class="info_text">
+									<p>
+										Next add an Hue/Saturation Adjustment Layer to the image.<br>
+										<i>"Layer > Adjustment Layers > Hue/Saturation"</i>
+										<br>Or you can go to the little circle at the bottom of the layers panel.
+										<br>The Hue/Saturation Layer allows you to edit a images color.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/sepia/step_two.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">
+									Step 3:
+								</section>
+								<section class="info_text">
+									<p>
+										Click on the little icon in the pop up menu of the Adjustment layer called;
+										<br><i>"Colorize"</i>
+										<br>This will allow you to change to put a color filter over the whole image.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/sepia/step_three.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">
+									Step 4:
+								</section>
+								<section class="info_text">
+									<p>
+										Change the Hue slider to a yellow tint, in this case around 42.
+										<br>This will give the image the classic Sepia look. 
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/sepia/step_four.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">
+									Step 5:
+								</section>
+								<section class="info_text">
+									<p>After you have edited the photo it is time to export it to a appropriate file type.<br>
+									<i>"Ctrl + S or Ctrl + Shift + S"</i><br>
+									Give the image a appropriate name and in the 'Save as type' select JPEG<br>
+									A pop up window will appear changing the slider will increase or decrease the quality of the image. <br>
+									Note that the higher the number the larger the size of the file will be.<br>
+									Hit "ok", congratulations, you have created a Sepia image.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/sepia/step_five.jpg" class="image_properties"/>
+								</section>
+						</section>
+						
+						<section id="Vignette">
+							<section id="open_topic_t3" onmouseover="Arrow_hover('open_topic_t3');" onmouseout="Arrow_no_hover('open_topic_t3');">
+								<a onclick="Select_Course('topic_info_t3');">></a>
+							</section>
+							<h2 class="course_topic_title">VIGNETTE</h2>
+						</section>
+						<section id="topic_info_t3" style="display: none;">
+								<section class="info_title">
+									Step 1:
+								</section>
+								<section class="info_text">
+									<p>
+										Firstly open the image you would like to make into a sepia image.<br>
+										<i>"Ctrl + O" or "File > Open > (Locate File)"</i><br>
+										You can use your own image or one of the images provided in the download link in the<br>
+										footer below.
+										<br>Remember to always save your work 
+										<br><i>"File > Save"</i>
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/vin/step_one.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">
+									Step 2:
+								</section>
+								<section class="info_text">
+									<p>
+										Select the circle Marquee tool (M) or go to the tool panel and click and hold the Marquee tool and select the circle select tool<br>
+										Click and drag from one corner to the other.
+										<br>This will create a oval shape selection of the image.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/vin/step_two.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">
+									Step 3:
+								</section>
+								<section class="info_text">
+									<p>
+										While the selection is active inverse the selection<br>
+										<i>"Ctrl + Shift + I"</i><br>
+										Now create a new layer;<br>
+										<i>"Shift + Ctrl + N"</i><br>
+										With the new layer selected use the fill tool (G) to fill the selected area of the image.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/vin/step_three.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">
+									Step 4:
+								</section>
+								<section class="info_text">
+									<p>
+										Use "Ctrl + D" to deselect the selection.<br>
+										With the layer selected go to; <br>
+										<i>"Filter > Blur > Gaussian Blur"</i><br>
+										A pop up menu will appear the more the value the greater the blur. Make the Radius value a high number, <br>
+										For this image, a value of 817 was used. This creates the vignette effect.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/vin/step_four.jpg" class="image_properties"/>
+								</section>
+								
+								<section class="info_title">
+									Step 5:
+								</section>
+								<section class="info_text">
+									<p>
+										After you have edited the photo it is time to export it to a appropriate file type.<br>
+										<i>"Ctrl + S or Ctrl + Shift + S"</i><br>
+										Give the image a appropriate name and in the 'Save as type' select JPEG<br>
+										A pop up window will appear changing the slider will increase or decrease the quality of the image. <br>
+										Note that the higher the number the larger the size of the file will be.<br>
+										Hit "ok", congratulations, you have created a vignette image.
+									</p>
+								</section>
+								<section class="info_image">
+									<img src="img/course_one/vin/step_five.jpg" class="image_properties"/>
+								</section>
+						</section>
+						
+					</section>
+				</section>
+			</section>
+			
+			<section id="footer" onmouseover="Hover_active('footer', 'opacity', '1');" onmouseout="No_hover('footer', 'opacity', '0.2');"> <!--Footer and hover effect-->
+				<section class="copyright">
+					<section id="visable_footer"> <!--What will be seen before JS-->
+						&copy Sunset Studios Canberra	2015
+					</section>
+					<section id="hidden_footer" style="display: none;">	<!--What will be seen after JS-->
+							<section id="helpful_links">
+								HELPFUL LINKS:<br>
+								<li>
+									<a class="footer_text" href="http://phlearn.com/" target="_blank">Phlearn.com</a><br>
+								</li>
+								<li>
+									<a class="footer_text" href="http://www.freeimages.com/" target="_blank">Free Images</a><br>
+								</li>
+								<li>
+									<a class="footer_text" href="https://www.adobe.com" target="_blank">Adobe Website</a><br>
+								</li>
+							</section>
+							<section id="social_network">
+								SOCIAL:<br>
+								<li>
+									<a class="footer_text" href="download/images.zip" download="images.zip">Download Images Here</a><br>	<!--Download Link-->
+								</li>
+								<li>
+									<a class="footer_text" href="https://www.facebook.com/SunsetStudiosCanberra" target="_blank">Facebook</a>
+								<li>
+									<a class="footer_text">Contact</a>
+								</li>
+							</section>
+					</section>
+				</section>
+				<section id="footer_open" onclick="Footer_show('footer');">	<!--Button to open Footer-->
+						<a>V</a>
+				</section>
+				
+			</section>
+			
+		</section>
+		<script src="js/home.js"></script>	<!--Import JS-->
+		<script src="js/course.js"></script>
+		<script src="js/hover.js"></script>
+		<script src="js/jump.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
+</html>
