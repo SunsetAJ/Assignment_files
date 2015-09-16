@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+		<link rel="stylesheet" href="css/nav_style.css">
+		<link rel="stylesheet" href="css/quiz_style.css">
+		<title>PST | Course 1 Quiz</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="uft-8">
+	</head>
+	<body style="background-color: #dedede;">
+		<section id="quiz_container">
+			<h1 class="quiz_titles">COURSE 1 - QUIZ</h1>
+			<p class="quiz_subtitle">Test your knowledge on the first course that handles effects in Photoshop:</p>
+			
+			<form name="quizForm" onsubmit="return submitAnswersC1();" id="form_style">
+				<h2 class="question_style">1. True or False: The higher the quality value when exporting your image the lower the file size?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q1" value="a" id="q1a">a. True</input>
+					<br><input type="radio" name="q1" value="b" id="q1b">b. False</input>
+				</p>
+				
+				<h2 class="question_style">2. What is the shortcut to Deselect a selection made in Photoshop?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q2" value="a" id="q2a">a. "Shift + D"</input>
+					<br><input type="radio" name="q2" value="b" id="q2b">b. "Alt + S"</input>
+					<br><input type="radio" name="q2" value="c" id="q2c">c. "Ctrl + D"</input>
+					<br><input type="radio" name="q2" value="d" id="q2d">d. "Ctrl + Shift + D"</input>
+				</p>
+				
+				<h2 class="question_style">3. What is the keyboard shortcut for the Fill tool?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q3" value="a" id="q3a">a. ( G )</input>
+					<br><input type="radio" name="q3" value="b" id="q3b">b. ( F )</input>
+					<br><input type="radio" name="q3" value="c" id="q3c">c. ( C )</input>
+					<br><input type="radio" name="q3" value="d" id="q3d">d. ( A )</input>
+				</p>
+				
+				<h2 class="question_style">4. What is the shortcut to make a new layer?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q4" value="a" id="q4a">a. "Shift + N"</input>
+					<br><input type="radio" name="q4" value="b" id="q4b">b. "Ctrl + Shift + N"</input>
+					<br><input type="radio" name="q4" value="c" id="q4c">c. "Ctrl + N"</input>
+					<br><input type="radio" name="q4" value="d" id="q4d">d. "Shift + Alt + N"</input>
+				</p>
+				
+				<h2 class="question_style">5. What Adjustment Layer was used to create the Sepia effect?</h2>
+				<p class="answer_style">
+					<input type="radio" name="q5" value="a" id="q5a">a. Hue Adjustment Layer</input>
+					<br><input type="radio" name="q5" value="b" id="q5b">b. Saturation Adjustment Layer</input>
+					<br><input type="radio" name="q5" value="c" id="q5c">c. Filter Adjustment Layer</input>
+					<br><input type="radio" name="q5" value="d" id="q5d">d. Hue/Saturation Adjustment Layer</input>
+				</p>
+				
+				<br><br>
+				<input type="submit" value="SUBMIT" onmouseover="Hover_active('submit_button', 'background-color', '#4c98b1');" onmouseout="No_hover('submit_button', 'background-color', '#B4E1F0');" id="submit_button">
+				<a href="quiz_form.html"><input type="button" value="BACK" onmouseover="Hover_active('back_button', 'background-color', '#4c98b1');" onmouseout="No_hover('back_button', 'background-color', '#B4E1F0');" id="back_button">
+				</input></a>
+				<section id="results"></section>
+			</form>
+		</section>
+		
+		<script src="js/home.js"></script>
+		<script src="js/hover.js"></script>
+		<script src="js/quiz.js"></script>
+	</body>
+</html>
