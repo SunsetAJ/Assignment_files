@@ -1,0 +1,58 @@
+/*Quiz CSS*/
+#quiz_location{
+	width: 67.5%;
+	float: left;
+	font-family: 'impact';
+	color: black;
+	margin-left: 1rem;
+}
+
+.quiz_title{
+	font-size: 3rem;
+	margin: 0px;
+	margin-bottom: 0.5rem;
+}
+
+.quiz_buttons{
+	width: 80%;
+	margin: auto;
+	border: 0.125rem solid #B4E1F0;
+	margin-bottom: 0.5rem;
+}
+
+.quiz_button_title{
+	font-size: 2.5rem;
+	margin: 0px;
+}
+
+.quiz_link{
+	text-decoration:none;
+	color: black;
+}
+
+@media screen and (max-width: 1400px){
+	#quiz_location{
+		width: 90%;
+		margin: auto;
+		float: none;
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 1150px){
+	#quiz_location{
+		width: 90%;
+		margin: auto;
+		float: none;
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	#quiz_location{
+		width: 90%;
+		margin: auto;
+		float: none;
+		margin-top: 1rem;
+	}
+}
